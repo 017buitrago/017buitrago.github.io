@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Puzzle - Butterflies</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    
+    .page {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .info {
+      background-color: #ffffff;
+      border: 2px solid #333333;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .puzzle {
+      background-color: #ffffff;
+      border: 2px solid #333333;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .date {
+      background-color: #ffffff;
+      border: 2px solid #333333;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* FLEXBOX: el contenedor del rompecabezas */
+    .puzzle-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    
+    .piece {
+      width: 25%;
+    }
+
+    .piece img {
+      width: 100%;
+      display: block;
+    }
+
+    
+.pA { order: 3; }
+.pB { order: 7; }
+.pC { order: 12; }
+.pD { order: 4; }
+.pE { order: 10; }
+.pF { order: 14; }
+.pG { order: 2; }
+.pH { order: 8; }
+.pI { order: 13; }
+.pJ { order: 4; }
+.pK { order: 16; }
+.pL { order: 15; }
+.pM { order: 5; }
+.pN { order: 11; }
+.pO { order: 9; }
+.pP { order: 6; }
+.pQ { order: 1; }
+
+    
+    .faulty {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Sección 1: nombre y puzzle -->
+    <div class="info">
+      <h1>Sergio Buitrago</h1>
+      <p>Puzzle: Butterflies</p>
+    </div>
+
+    <!-- Sección 2: rompecabezas -->
+    <div class="puzzle">
+      <h2>Flex Puzzle</h2>
+      <div class="puzzle-container">
+      <div class="piece pA"><img src="images/puzzle1_A.jpg" alt="Pieza A"></div>
+      <div class="piece pB"><img src="images/puzzle1_B.jpg" alt="Pieza B"></div>
+      <div class="piece pC"><img src="images/puzzle1_C.jpg" alt="Pieza C"></div>
+      <div class="piece pD faulty"><img src="images/puzzle1_D.jpg" alt="Pieza D"></div>
+      <div class="piece pE"><img src="images/puzzle1_E.jpg" alt="Pieza E"></div>
+      <div class="piece pF"><img src="images/puzzle1_F.jpg" alt="Pieza F"></div>
+      <div class="piece pG"><img src="images/puzzle1_G.jpg" alt="Pieza G"></div>
+      <div class="piece pH"><img src="images/puzzle1_H.jpg" alt="Pieza H"></div>
+      <div class="piece pI"><img src="images/puzzle1_I.jpg" alt="Pieza I"></div>
+      <div class="piece pJ"><img src="images/puzzle1_J.jpg" alt="Pieza J"></div>
+      <div class="piece pK"><img src="images/puzzle1_K.jpg" alt="Pieza K"></div>
+      <div class="piece pL"><img src="images/puzzle1_L.jpg" alt="Pieza L"></div>
+      <div class="piece pM"><img src="images/puzzle1_M.jpg" alt="Pieza M"></div>
+      <div class="piece pN"><img src="images/puzzle1_N.jpg" alt="Pieza N"></div>
+      <div class="piece pO"><img src="images/puzzle1_O.jpg" alt="Pieza O"></div>
+      <div class="piece pP"><img src="images/puzzle1_P.jpg" alt="Pieza P"></div>
+      <div class="piece pQ"><img src="images/puzzle1_Q.jpg" alt="Pieza Q"></div>
+      </div>
+    </div>
+
+    <!-- Sección 3: fecha -->
+    <div class="date">
+      <p>Completed on October 24, 2026</p>
+    </div>
+
+  </div>
+</body>
+</html>
