@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS3 Images Assignment</title>
+<style>
+body {
+  background-color: white;
+  font-family: Times New Roman, serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.project {
+  margin: 30px;
+}
+
+.penguins {
+  width: 450px;
+  height: 300px;
+  border-radius: 50%;
+  filter: sepia(100%);
+  box-shadow: 10px 10px 15px gray;
+}
+
+.football {
+  width: 500px;
+  height: 230px;
+  filter: grayscale(100%);
+  border: 25px solid black;
+  border-image: url(tic-tac-toe.png) 33% / 25px round;
+}
+
+.dino {
+  width: 300px;
+  filter: drop-shadow(10px 10px 8px gray);
+}
+
+.seagull-box {
+  width: 560px;
+  height: 396px;
+  background: linear-gradient(to bottom right, #8888ff, white);
+  box-shadow: 5px 5px 10px gray;
+}
+
+.seagull-box img {
+  width: 560px;
+  height: 396px;
+}
+
+.butterfly {
+  width: 400px;
+  height: 243px;
+  filter: invert(100%);
+  border-radius: 40px 100px 40px 100px;
+  border: 5px solid white;
+  box-shadow: 0 0 10px gray;
+}
+
+.stage-box {
+  position: relative;
+  width: 400px;
+  height: 352px;
+}
+
+.stage-box img {
+  width: 400px;
+  height: 352px;
+  box-shadow: 0 0 20px 10px darkred;
+  filter: saturate(200%) contrast(120%);
+}
+
+.stage-box p {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 400px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px black;
+}
+</style>
+</head>
+<body>
+
+<h1>My CSS3 Image Projects</h1>
+
+<div class="project">
+  <h2>Penguins</h2>
+  <img class="penguins" src="penguins.jpg" alt="Penguins">
+</div>
+
+<div class="project">
+  <h2>Football Field</h2>
+  <img class="football" src="football_field.jpg" alt="Football field">
+</div>
+
+<div class="project">
+  <h2>Dinosaur</h2>
+  <img class="dino" src="dinosaur.png" alt="Dinosaur">
+</div>
+
+<div class="project">
+  <h2>Seagull</h2>
+  <div class="seagull-box">
+    <img src="seagull.png" alt="Seagull">
+  </div>
+</div>
+
+<div class="project">
+  <h2>Butterfly</h2>
+  <img class="butterfly" src="butterfly.jpg" alt="Butterfly">
+</div>
+
+<div class="project">
+  <h2>Presenting</h2>
+  <div class="stage-box">
+    <img src="theater_stage.jpg" alt="Theater stage">
+    <p>Presenting</p>
+  </div>
+</div>
+
+</body>
+</html>
